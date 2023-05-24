@@ -1,9 +1,11 @@
 package likelion.springbootjjeongee.repository;
 
-import likelion.springbootjjeongee.domain.Member;
+import likelion.springbootjjeongee.domain.Item;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-    public interface MemberRepository extends JpaRepository<Member,Long>{}
+public interface ItemRepository extends JpaRepository<Item,Long>{}
+
+
 

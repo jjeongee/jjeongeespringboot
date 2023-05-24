@@ -1,12 +1,15 @@
+package likelion.springbootjjeongee.service;
+
+import likelion.springbootjjeongee.domain.Item;
+import org.springframework.stereotype.Service;
+
+import java.util.List;
+
+@Service
 public interface ItemService {
-    @Transactional
-    public Item save(Item item);
+    public void save(Item item);
 
-    @Transactional(readOnly = true)
+    public Item findById(Long id);
+
     public List<Item> findAll();
-
-    @Transactional(readOnly=true)
-    public Item findById(long id);
-    @Transactional
-    public void update(Long id, Item item);
 }

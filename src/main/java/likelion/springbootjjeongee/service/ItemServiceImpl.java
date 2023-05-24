@@ -1,5 +1,13 @@
+package likelion.springbootjjeongee.service;
+
+import likelion.springbootjjeongee.domain.Item;
+import likelion.springbootjjeongee.repository.ItemRepository;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+import java.util.List;
+
 @Service
-@RequireArgsConstructor
 public class ItemServiceImpl implements ItemService {
     private final ItemRepository itemRepository;
     
